@@ -1,4 +1,18 @@
 :root {
+  --gold: #ffd700;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #0000ff;
+  --orange: #ffa500;
+  --red: #ff0000;
+  --yellow: #ffff00;
+
+  --teal: #008080;
+  --royalblue: #4169e1;
+  --violet: #9400d3;
+  --green: #008000;
+  --magenta: #8b008b;
+  --purple: #8000ff;
   --darkviolet: #9400d3;
   --maroon: #800000;
   --darkgolden: #8f6805;
@@ -9,18 +23,39 @@
   color: var(--white);
 }
 
+.main {
+  margin-top: 80px;
+}
 .static {
+  position: static;
+  width: 300px;
+  height: 400px;
   background-color: var(--darkviolet);
 }
 
 .relative {
+  position: relative;
+  top: -420px;
+  left: 330px;
+  width: 300px;
+  height: 400px;
   background-color: var(--purple);
 }
 
 .absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--maroon);
 }
 
 .fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
   background-color: var(--darkgolden);
 }

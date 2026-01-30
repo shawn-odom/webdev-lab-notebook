@@ -1,5 +1,21 @@
 :root {
   --gold: #ffd700;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #0000ff;
+  --orange: #ffa500;
+  --red: #ff0000;
+  --yellow: #ffff00;
+
+  --teal: #008080;
+  --royalblue: #4169e1;
+  --violet: #9400d3;
+  --green: #008000;
+  --magenta: #8b008b;
+
+  --darkviolet: #9400d3;
+  --maroon: #800000;
+  --darkgolden: #8f6805;
 }
 
 body {
@@ -9,7 +25,7 @@ body {
 .header,
 .section,
 .aside {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 10px;
   border: 4px solid var(--black);
 }
@@ -19,7 +35,7 @@ body {
 }
 
 .section {
-  display: inline-block;
+  display: inline-black;
   width: 75%;
   height: 300px;
   background-color: var(--orange);

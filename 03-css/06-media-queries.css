@@ -1,4 +1,67 @@
-@media (min-width: 1024px) {
+:root {
+  --teal: #008080;
+  --royalblue: #4169e1;
+  --violet: #9400d3;
+  --green: #008000;
+  --magenta: #8b008b;
+  --darkviolet: #9400d3;
+  --maroon: #800000;
+  --darkgolden: #8f6805;
+  --white: #ffffff;
+  --purple: #8000ff;
+  --black: #000000;
+  --blue: #0000ff;
+  --orange: #ffa500;
+  --gray: #808080;
+}
+
+nav {
+  background-color: var(--black);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a:hover {
+  background-color: var(--gray);
+}
+nav ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: var(--white);
+}
+.main {
+  margin-top: 100px;
+  padding: 0 0.5em;
+}
+body {
+  background: var(--purple);
+  color: var(--white);
+}
+@media (max-width: 414px) {
+  nav ul li {
+    width: 100%;
+  }
+  .main {
+    margin-top: 250px;
+  }
+}
+@media (min-width: 415px) and (max-width: 1024px) {
+  body {
+    background: var(--orange);
+    color: var(--black);
+  }
+}
+@media (min-width: 1025px) {
   body {
     background: var(--green);
     color: var(--white);
